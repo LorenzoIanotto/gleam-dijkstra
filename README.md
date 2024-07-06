@@ -10,6 +10,7 @@ gleam add dijkstra
 
 ```gleam
 import dijkstra.{type Graph, Adjacency}
+import gleam/io
 import gleam/result
 
 pub fn main() {
@@ -27,6 +28,8 @@ pub fn main() {
 
   let shortest_path = dijkstra.shortest_path(graph, "A", "C")
     |> result.unwrap([])
+
+  io.debug(shortest_a_c == shortest_path)
 }
 ```
 
