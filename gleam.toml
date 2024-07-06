@@ -1,0 +1,18 @@
+# For a full reference of all the available options, you can have a look at
+# https://gleam.run/writing-gleam/gleam-toml/.
+
+name = "dijkstra"
+version = "1.0.0"
+description = "Dijkstra's Shortest Path algorithm implementation for Gleam"
+licences = ["GPL-3.0-or-later"]
+
+[repository]
+type = "github"
+user = "LorenzoIanotto"
+repo = "gleam-dijkstra"
+
+[dependencies]
+gleam_stdlib = ">= 0.34.0 and < 2.0.0"
+
+[dev-dependencies]
+gleeunit = ">= 1.0.0 and < 2.0.0"
